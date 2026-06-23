@@ -1,28 +1,32 @@
 .header {
   // display: none !important;
   background-image: url(../images/header-bg-mobile.png);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
 
 
   &__content {
-    height: 100vh;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100vh;
   }
 
   &__title {
     margin: 0;
-    font-style: bold;
-    font-weight: 700;
+
     font-size: 36px;
+    font-weight: 700;
+    font-style: bold;
     line-height: 100%;
     letter-spacing: 0;
 
-    @media (min-width: 576px) {
-      font-size: 40px;
+    @include on-tablet {
+      font-size: 48px;
+    }
+
+    @include on-desktop {
+      font-size: 56px;
     }
   }
 
