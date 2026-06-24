@@ -250,10 +250,8 @@
 
             <div class="contacts__content">
               <form
-                action="#"
-                method="post"
                 class="contacts__form"
-                id="contacts-form"
+                onsubmit="this.reset(); return false;"
               >
                 <input
                   type="text"
