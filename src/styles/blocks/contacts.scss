@@ -66,11 +66,19 @@
     margin: 0 0 8px;
     font-size: 14px;
     color: $secondary-text-color;
+
+    &:hover {
+      color: $secondary-text-color;
+    }
   }
 
   &__link {
     line-height: 140%;
     color: $main-text-color;
     text-decoration: none;
+
+    &:hover {
+      color: $secondary-text-color;
+    }
   }
 }

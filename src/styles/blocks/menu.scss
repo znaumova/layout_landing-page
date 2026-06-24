@@ -1,10 +1,17 @@
 .menu {
+  overflow: auto;
+
   box-sizing: border-box;
   height: 100vh;
+
   font-weight: 700;
+
   background-color: $bc-menu;
 
   &__top {
+    position: sticky;
+    z-index: 1;
+    top: 0;
     margin-bottom: 32px;
 
     @include on-tablet {
@@ -43,4 +50,3 @@
     letter-spacing: 2px;
   }
 }
-
